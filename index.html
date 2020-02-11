@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--
+  <div class="ui stackable secondary menu">
+    <div class="item">
+      <img src="images/placeholder-logo.png" class="placeholder">
+    </div>
+    <a class="active item">Home</a>
+    <a class="item">Problems We Solve</a>
+    <a class="item">Fix and Flip 101</a>
+    <a class="item">About Us</a>
+    <div class="right menu">
+      <div class="item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+      <div class="get-started item">
+        <div class="ui teal button">Get Started</div>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <!-- Following Menu -->
+<div class="ui top fixed hidden menu">
+  <div class="ui container">
+    <a class="active item" href="index.html">Home</a>
+    <a class="item" href="problems.html">Problems We Solve</a>
+    <a class="item" href="cases.html">Case Studies</a>
+    <a class="item" href="101.html">Fix and Flip 101</a>
+    <a class="item" href="about.html">About Us</a>
+    <div class="right item">
+      <a class="ui primary button">Get Started <i class="right arrow icon"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item" href="index.html">Home</a>
+  <a class="item" href="problems.html">Problems We Solve</a>
+  <a class="item" href="cases.html">Case Studies</a>
+  <a class="item" href="101.html">Fix and Flip 101</a>
+  <a class="item" href="about.html">About Us</a>
+  <a class="item">Get Started</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui vertical masthead center aligned segment landing-image">
+
+    <div class="ui container">
+      <div class="ui secondary pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item" href="index.html">Home</a>
+        <a class="item" href="problems.html">Problems We Solve</a>
+        <a class="item" href="cases.html">Case Studies</a>
+        <a class="item" href="101.html">Fix and Flip 101</a>
+        <a class="item" href="about.html">About Us</a>
+        <div class="right item">
+          <a class="ui primary button">Get Started <i class="right arrow icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="translucent ui text container">
+      <h1 class="titlee ui header">
+        FUND MY FLIP
+      </h1>
+      <h2 class="subtitle ui ">find the best lender for your needs</h2>
+      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+    </div>
+
+  </div>
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact Us</a>
+            <a href="#" class="item">Religious Ceremonies</a>
+            <a href="#" class="item">Gazebo Plans</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Banana Pre-Order</a>
+            <a href="#" class="item">DNA FAQ</a>
+            <a href="#" class="item">How To Access</a>
+            <a href="#" class="item">Favorite X-Men</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Scripts -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+</body>
+
+</html>
