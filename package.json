@@ -17,5 +17,13 @@
     "express": "^4.17.1",
     "semantic-ui": "^2.4.2"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addierohrbach/FundMyFlip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/addierohrbach/FundMyFlip/issues"
+  },
+  "homepage": "https://github.com/addierohrbach/FundMyFlip#readme"
 }

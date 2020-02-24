@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
 
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript" src="js/index.js"></script>
+  
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -62,7 +66,7 @@
         <a class="item" href="101.html">Fix and Flip 101</a>
         <a class="item" href="about.html">About Us</a>
         <div class="right item">
-          <a class="ui primary button">Get Started <i class="right arrow icon"></i></a>
+          <a class="ui primary button" >Get Started <i class="right arrow icon"></i></a>
         </div>
       </div>
     </div>
@@ -73,6 +77,20 @@
       </h1>
     </div>
 
+  </div>
+
+  <div class="ui form modal start-form" id="form">
+    <form method="POST" action="/" class="start-form" id="form">
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first_name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="last_name" placeholder="Last Name">
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
   </div>
 
   <div class="problems ui styled accordion">

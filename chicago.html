@@ -1,4 +1,4 @@
-<!-- HTML for Fix and Flip 101 page -->
+<!-- HTML for the Problems We Solve page -->
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -54,8 +54,8 @@
   <div class="ui container">
     <a class="item" href="index.html">Home</a>
     <a class="item" href="problems.html">Problems We Solve</a>
-    <a class="item" href="cases.html">Case Studies</a>
-    <a class="active item" href="101.html">Fix and Flip 101</a>
+    <a class="active item" href="cases.html">Case Studies</a>
+    <a class="item" href="101.html">Fix and Flip 101</a>
     <a class="item" href="about.html">About Us</a>
     <div class="right item">
       <a class="ui primary button">Get Started <i class="right arrow icon"></i></a>
@@ -67,8 +67,8 @@
 <div class="ui vertical inverted sidebar menu">
   <a class="item" href="index.html">Home</a>
   <a class="item" href="problems.html">Problems We Solve</a>
-  <a class="item" href="cases.html">Case Studies</a>
-  <a class="active item" href="101.html">Fix and Flip 101</a>
+  <a class="active item" href="cases.html">Case Studies</a>
+  <a class="item" href="101.html">Fix and Flip 101</a>
   <a class="item" href="about.html">About Us</a>
   <a class="item">Get Started</a>
 </div>
@@ -85,8 +85,8 @@
         </a>
         <a class="item" href="index.html">Home</a>
         <a class="item" href="problems.html">Problems We Solve</a>
-        <a class="item" href="cases.html">Case Studies</a>
-        <a class="active item" href="101.html">Fix and Flip 101</a>
+        <a class="active item" href="cases.html">Case Studies</a>
+        <a class="item" href="101.html">Fix and Flip 101</a>
         <a class="item" href="about.html">About Us</a>
         <div class="right item">
           <a class="ui primary button">Get Started <i class="right arrow icon"></i></a>
@@ -94,66 +94,44 @@
       </div>
     </div>
 
-    <div class="subpage-header">
-      <h1 class="title-subpage">
-        FIX AND FLIP 101
-      </h1>
-    </div>
-
-  </div>
-
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-        <div class="eight wide column">
-          <h3 class="ui header">We Help Companies and Companions</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="center aligned column">
-          <a class="ui huge button">Check Them Out</a>
-        </div>
+    <div class="detail-header">
+      <h1 class="title-detail">Chicago, IL</h1>
+      <h3 class="address">this is the address of the house</h3>
+      <div class="ui medium images">
+        <img src="images/blue-house.jpg">
+        <img src="images/white-house.jpg">
       </div>
     </div>
-  </div>
 
-
-  <div class="ui vertical stripe quote segment">
-    <div class="ui equal width stackable internally celled grid">
-      <div class="center aligned row">
-        <div class="column">
-          <h3>"What a Company"</h3>
-          <p>That is what they all say about us</p>
-        </div>
-        <div class="column">
-          <h3>"I shouldn't have gone with their competitor."</h3>
-          <p>
-            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-          </p>
-        </div>
+    <div>
+      <h1 class="breakdown-title">Economic Breakdown</h1>
+      <div class="breakdown">
+        <table class="ui celled table">
+          <thead>
+            <tr><th>Name</th>
+            <th>Age</th>
+            <th>Job</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Name">James</td>
+              <td data-label="Age">24</td>
+              <td data-label="Job">Engineer</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Jill</td>
+              <td data-label="Age">26</td>
+              <td data-label="Job">Engineer</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Elyse</td>
+              <td data-label="Age">24</td>
+              <td data-label="Job">Designer</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-      <a class="ui large button">Read More</a>
-      <h4 class="ui horizontal header divider">
-        <a href="#" id="problems">Case Studies</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-      <a class="ui large button">I'm Still Quite Interested</a>
-    </div>
-  </div>
 
 
   <div class="ui inverted vertical footer segment">
@@ -221,6 +199,10 @@
       $('.ui.sidebar')
         .sidebar('attach events', '.toc.item')
       ;
+
+      $('.special.cards .image').dimmer({
+        on: 'hover'
+      });
 
     })
   ;

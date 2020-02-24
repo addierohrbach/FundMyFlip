@@ -11,9 +11,18 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/modernizr-3.8.0.min.js"></script>
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -51,7 +60,7 @@
     <a class="item" href="101.html">Fix and Flip 101</a>
     <a class="item" href="about.html">About Us</a>
     <div class="right item">
-      <a class="ui primary button">Get Started <i class="right arrow icon"></i></a>
+      <a class="ui primary button" id="start">Get Started <i class="right arrow icon"></i></a>
     </div>
   </div>
 </div>
@@ -63,7 +72,7 @@
   <a class="item" href="cases.html">Case Studies</a>
   <a class="item" href="101.html">Fix and Flip 101</a>
   <a class="item" href="about.html">About Us</a>
-  <a class="item">Get Started</a>
+  <a class="item" id="start">Get Started</a>
 </div>
 
 
@@ -82,7 +91,7 @@
         <a class="item" href="101.html">Fix and Flip 101</a>
         <a class="item" href="about.html">About Us</a>
         <div class="right item">
-          <a class="ui primary button">Get Started <i class="right arrow icon"></i></a>
+          <a class="ui primary button" id="start">Get Started <i class="right arrow icon"></i></a>
         </div>
       </div>
     </div>
@@ -92,11 +101,32 @@
         FUND MY FLIP
       </h1>
       <h2 class="subtitle ui ">find the best lender for your needs</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      <div class="ui huge primary button" id="start">Get Started <i class="right arrow icon"></i></div>
     </div>
 
   </div>
 
+  <div class="ui form modal start-form" id="form">
+    <form method="POST" action="/" class="start-form" id="form">
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first_name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="last_name" placeholder="Last Name">
+      </div>
+      <div class="field">
+        <label>Cell Phone</label>
+        <input type="text" name="cell_phone" placeholder="Cell Phone">
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Email">
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+  </div>
 
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
@@ -129,44 +159,13 @@
 </div>
 
   <!-- Scripts -->
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="semantic/dist/semantic.min.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <script>
-  $(document)
-    .ready(function() {
 
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  </script>
 </body>
 
 </html>

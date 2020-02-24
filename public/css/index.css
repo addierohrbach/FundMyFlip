@@ -6,6 +6,10 @@
   color: black;
 }
 
+.start-form {
+  padding: 20px;
+}
+
 .landing-image {
   background-image: url('../images/chicago-skyline.png') !important;
   background-size: cover !important;
@@ -30,11 +34,46 @@
   margin-top: 0px;
 }
 
+.detail-header {
+  background-color: rgb(35, 35, 35);
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+}
+
 .title-subpage {
   letter-spacing: 5px;
   color: white;
   padding-top: 75px;
   font-size: 50px;
+}
+
+.breakdown {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.breakdown-title {
+  padding-top: 50px;
+  letter-spacing: 2px;
+}
+
+.address {
+  letter-spacing: 3px;
+  color: white;
+  margin-top: -15px;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.title-detail {
+  letter-spacing: 5px;
+  color: white;
+  padding-top: 65px;
+  font-size: 40px;
 }
 
 .titlee {
